@@ -1,6 +1,7 @@
 package main
 
+import Hangman "Hangman/src/function"
 
-func main () {
-	
+func main() {
+	Hangman.Menu()
 }
