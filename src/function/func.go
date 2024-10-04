@@ -55,6 +55,7 @@ func NewGame() {
 	fmt.Println("Choisissez une difficulté...")
 	fmt.Println("1. Facile")
 	fmt.Println("2. Difficile")
+	fmt.Println("3. Très difficile (Les mots les plus long de la langue française, selon ChatGPT évidemment)")
 	fmt.Print("Votre choix: ")
 	fmt.Scan(&input)
 	switch input {
@@ -64,6 +65,9 @@ func NewGame() {
 	case "2":
 		ClearTerminal()
 		ShowTextFromFile("src/wordList/wordList_Hard.txt")
+		case "3":
+			ClearTerminal()
+            ShowTextFromFile("src/wordList/wordList_VeryHard.txt")
 	default:
 		fmt.Println("Pas compris")
 		NewGame()
